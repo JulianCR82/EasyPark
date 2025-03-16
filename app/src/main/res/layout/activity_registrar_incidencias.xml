@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.RegistrarIncidencias">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Registrar Incidencias"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FECHA DE LA INCIDENCIA"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="55dp"/>
+
+    <Button
+        android:id="@+id/btnSeleccionarFecha"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#008B8B"
+        android:text="SELECCIONAR" />
+
+    <TextView
+        android:id="@+id/txtFechaSeleccionada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETALLES DE LA INCIDENCIA"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="45dp"/>
+
+    <EditText
+        android:id="@+id/edtIngresaDetalles"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="DESCRIPCION"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#008B8B"
+        android:text="Registrar"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnVolverHomeAdmin2"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#008B8B"
+        android:text="Volver"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/img" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.HistorialIncidencias">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="HISTORIAL DE INCIDENCIAS"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el ID para hacer la consulta"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:fontFamily="serif"/>
+
+
+    <Spinner
+        android:id="@+id/spIncidencias"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
+
+    <ListView
+        android:id="@+id/listIncidencias"
+        android:layout_width="wrap_content"
+        android:layout_height="306dp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnVolverHomeAdmin3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#008B8B"
+        android:text="Volver"
+        android:textSize="20dp" />
+
+
+
+
+</LinearLayout>
